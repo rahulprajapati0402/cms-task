@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMS Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <main>
+
+
+        <div class="container px-4 py-5">
+        <h2 class="fw-bold text-body-emphasis pb-2 border-bottom">{{api_data.title}}</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <h2 class="pb-2 border-bottom">Description</h2>
+                    <p class="text-body-secondary">{{api_data.description}}</p>
+                    
+                    <h2 class="pb-2 border-bottom">Content</h2>
+                    <p class="text-body-secondary">{{api_data.content}}</p>
+
+<div>
+                    <a href="#" class="btn btn-primary">Update</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#collection"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">{{api_data.posted_by}}</h4>
+                            <p class="text-body-secondary">Posted By
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#gear-fill"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">{{api_data.creation_date}}</h4>
+                            <p class="text-body-secondary">Created at
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#speedometer"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">{{api_data.like_count}}</h4>
+                            <p class="text-body-secondary">Likes
+                            </p>
+                        </div>
+
+                        <div class="col d-flex flex-column gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <svg class="bi" width="1em" height="1em">
+                                    <use xlink:href="#table"></use>
+                                </svg>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">{{api_data.title}}</h4>
+                            <p class="text-body-secondary">Title
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
